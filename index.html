@@ -1,17 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
     <meta name="author" content="J.R Ibanez Romany" />
+    <meta name="keywords" content="" />
     <title>
-      Miramelinda
+      Miramelinda Estates - Puerto Rico
     </title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <h1>
-      Website is under development
-    </h1>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container">
+        <a href="#page-top" class="navbar-brand"> Miramelinda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav-res"
+          aria-controls="nav-res"
+          aria-expanded="false"
+          aria-label="abrir navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="nav-res">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#welcome" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Comunidad</a>
+            </li>
+            <li class="nav-item">
+              <a href="#img" class="nav-link">Imágenes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#models" class="nav-link">Modelos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2 class="display-4">Comunidad</h2>
+              <p class="lead">
+                Después de lograr un éxito total en la venta de su fase I y II,
+                ahora regresa con su fase III. 23 nuevas residencias y una de
+                ellas ahora sí puede ser tuya. No pierdas esta oportunidad
+                Miramelinda Estates III te ofrece una comunidad familiar,
+                segura, rodeada de verdor y tranquilidad para que puedas hacer
+                de una de ellas tu hogar ideal.
+              </p>
+              <p class="lead"></p>
+              <a href="#modelos" role="button" class="btn btn-lg"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <form id="myForm" name="myForm">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      Contáctanos
+                    </h3>
+                    <p>
+                      Envianos un mensaje y te responderemos con la mayor
+                      brevedad posible
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="2"
+                        maxlength="60"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Teléfono (opcional)</label>
+                      <input
+                        type="number"
+                        class="form-group"
+                        id="phone"
+                        name="phone"
+                        required
+                        minlength="10"
+                        maxlength="10"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="msg">Mensaje</label>
+                      <textarea
+                        rows="5"
+                        required
+                        class="form-control"
+                        id="msg"
+                        name="msg"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button
+                      type="submit"
+                      name="submit"
+                      id="submit"
+                      class="btn btn-block m-3"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
+email = ventasmiramelinda@gmail.com
