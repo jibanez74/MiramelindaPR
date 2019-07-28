@@ -14,8 +14,10 @@
   </head>
   <body id="page-top">
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-success">
-      <div class="container">
-        <a href="#page-top" class="navbar-brand"> Miramelinda</a>
+      <div class="container-fluid">
+        <a href="#page-top">
+          <img src="./assets//logo.png" alt="Miramelinda Estates logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -164,14 +166,15 @@
                     </p>
                   </div>
                   <div class="card-body">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.590796447034!2d-65.83897708493937!3d18.365943687499204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c049fcb6cd09e8f%3A0xbfdd4385517ee93e!2sMiramelinda+Estates!5e0!3m2!1sen!2spr!4v1564349281363!5m2!1sen!2spr"
-                      width="600"
-                      height="450"
-                      frameborder="0"
-                      style="border:0"
-                      allowfullscreen
-                    ></iframe>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.590796447034!2d-65.83897708493937!3d18.365943687499204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c049fcb6cd09e8f%3A0xbfdd4385517ee93e!2sMiramelinda+Estates!5e0!3m2!1sen!2spr!4v1564349281363!5m2!1sen!2spr"
+                        class="embed-responsive-item"
+                        frameborder="0"
+                        style="border:0"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </div>
                   <div class="card-footer">
                     <p><strong>Horarios:</strong></p>
@@ -207,6 +210,33 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function() {
+        // Add smooth scrolling
+        $('#main-nav a').on('click', function(e) {
+          // Check for a hash value
+          if (this.hash !== '') {
+            // Prevent default behavior
+            e.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Animate smooth scroll
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              900,
+              function() {
+                // Add hash to URL after scroll
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 
