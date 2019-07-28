@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body id="page-top">
-    <nav class="navbar navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-success">
       <div class="container">
         <a href="#page-top" class="navbar-brand"> Miramelinda</a>
         <button
@@ -29,7 +29,7 @@
         </button>
 
         <div class="navbar-collapse collapse" id="nav-res">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href="#welcome" class="nav-link">Inicio</a>
             </li>
@@ -71,7 +71,7 @@
                 con sólo $1,500. El proyecto cuenta con acceso controlado,
                 piscina, gimnasio y área de juego para niños.
               </p>
-              <a href="#" class="my-4 btn btn-lg btn-success" role="button"
+              <a href="#" class="my-4 btn btn-lg btn-warning" role="button"
                 >Más Info
               </a>
             </div>
@@ -79,7 +79,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section class="mb-md-5 mb-4" id="contact">
         <div class="container-fluid">
           <div class="row px-md-3 px-lg-4">
             <div class="col-md-6">
@@ -145,7 +145,7 @@
                       type="submit"
                       name="submit"
                       id="submit"
-                      class="m-4 btn btn-block btn-success m-3"
+                      class="m-4 btn btn-block btn-warning m-3"
                     >
                       Enviar
                     </button>
@@ -158,22 +158,38 @@
               <div class="card">
                 <div class="card-header text-center">
                   <h3 class="card-title">
-                    Ventas
+                    Ventas y Horarios
                   </h3>
-
-                  <p class="card-text">
-                    Oficina de Venta en el mismo proyecto
-                  </p>
                 </div>
                 <div class="card-body">
+                  <p class="card-text">
+                    Nuestras oficinas de ventas, localizadas en el mismo proyecto, estarán abiertas:
+                  </p>
+                  <ul>
+                    <li>
+                      Sábado, Lunes y Martes de 10:30am a 5:00pm
+                    </li>
+                    <li>
+                      Domingos de 11:30 a 5:00
+                    </li>
+                  </ul>
 
+                  <p>
+                      También puede llamarnos al <strong>787- 634-8200</strong>
+                  </p>
                 </div>
+                <div class="card-footer"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="mb-0 mt-5">
+
+    </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
