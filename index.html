@@ -79,106 +79,110 @@
         </div>
       </section>
 
-      <section class="mb-md-5 mb-4" id="contact">
+      <section id="contact" class="mb-4">
         <div class="container-fluid">
-          <div class="row px-md-3 px-lg-4">
-            <div class="col-md-6">
-              <form id="myForm" name="myForm">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card-group">
+                <form id="myForm" name="myForm">
+                  <div class="card">
+                    <div class="card-header text-center">
+                      <h3 class="card-title">
+                        Contáctanos
+                      </h3>
+                      <p>
+                        Envianos un mensaje y te responderemos con la mayor
+                        brevedad posible
+                      </p>
+                    </div>
+                    <div class="card-body p-3">
+                      <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          required
+                          minlength="2"
+                          maxlength="60"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Teléfono (opcional)</label>
+                        <input
+                          type="number"
+                          class="form-group"
+                          id="phone"
+                          name="phone"
+                          required
+                          minlength="10"
+                          maxlength="10"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="msg">Mensaje</label>
+                        <textarea
+                          rows="5"
+                          required
+                          class="form-control"
+                          id="msg"
+                          name="msg"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button
+                        type="submit"
+                        name="submit"
+                        id="submit"
+                        class="m-4 btn btn-block btn-warning m-3"
+                      >
+                        Enviar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
                 <div class="card">
                   <div class="card-header text-center">
                     <h3 class="card-title">
-                      Contáctanos
+                      Localización
                     </h3>
-                    <p>
-                      Envianos un mensaje y te responderemos con la mayor
-                      brevedad posible
+                    <p class="card-text">
+                      Oficina de Venta en el mismo proyecto
                     </p>
                   </div>
-                  <div class="card-body p-3">
-                    <div class="form-group">
-                      <label for="name">Nombre</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        required
-                        minlength="2"
-                        maxlength="60"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Teléfono (opcional)</label>
-                      <input
-                        type="number"
-                        class="form-group"
-                        id="phone"
-                        name="phone"
-                        required
-                        minlength="10"
-                        maxlength="10"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="msg">Mensaje</label>
-                      <textarea
-                        rows="5"
-                        required
-                        class="form-control"
-                        id="msg"
-                        name="msg"
-                      ></textarea>
-                    </div>
+                  <div class="card-body">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.590796447034!2d-65.83897708493937!3d18.365943687499204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c049fcb6cd09e8f%3A0xbfdd4385517ee93e!2sMiramelinda+Estates!5e0!3m2!1sen!2spr!4v1564349281363!5m2!1sen!2spr"
+                      width="600"
+                      height="450"
+                      frameborder="0"
+                      style="border:0"
+                      allowfullscreen
+                    ></iframe>
                   </div>
                   <div class="card-footer">
-                    <button
-                      type="submit"
-                      name="submit"
-                      id="submit"
-                      class="m-4 btn btn-block btn-warning m-3"
-                    >
-                      Enviar
-                    </button>
+                    <p><strong>Horarios:</strong></p>
+                    <ul>
+                      <li>
+                        Sábado, Lunes y Martes de 10:30am a 5:00pm
+                      </li>
+                      Domingos de 11:30am a 5:00pm
+                    </ul>
                   </div>
                 </div>
-              </form>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header text-center">
-                  <h3 class="card-title">
-                    Ventas y Horarios
-                  </h3>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Nuestras oficinas de ventas, localizadas en el mismo proyecto, estarán abiertas:
-                  </p>
-                  <ul>
-                    <li>
-                      Sábado, Lunes y Martes de 10:30am a 5:00pm
-                    </li>
-                    <li>
-                      Domingos de 11:30 a 5:00
-                    </li>
-                  </ul>
-
-                  <p>
-                      También puede llamarnos al <strong>787- 634-8200</strong>
-                  </p>
-                </div>
-                <div class="card-footer"></div>
               </div>
             </div>
           </div>
@@ -186,9 +190,7 @@
       </section>
     </main>
 
-    <footer class="mb-0 mt-5">
-
-    </footer>
+    <footer class="mb-0 mt-5"></footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
