@@ -10,13 +10,19 @@
     <title>
       Miramelinda Estates - Puerto Rico
     </title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css"
   </head>
   <body id="page-top">
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-success p-3">
       <div class="container-fluid">
-        <a href="#page-top">
-          <img src="./assets//logo.png" alt="Miramelinda Estates logo" />
+        <a class="navbar-brand" href="#page-top">
+          <img src="./assets/logo.png" alt="Miramelinda logo" id="brand" />
         </a>
         <button
           class="navbar-toggler"
@@ -51,6 +57,27 @@
         </div>
       </div>
     </nav>
+
+    <header class="mb-3" id="welcome">
+      <div class="dark-overlay">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+              <h1>Miramelinda</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing.
+              </p>
+              <a
+                href="#about"
+                class="btn btn-lg btn-outline-warning"
+                role="button"
+                >Conócenos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section id="about">
@@ -92,11 +119,13 @@
                       Plano 1
                     </h2>
                   </div>
-                  <img class="img-fluid card-img-bottom" alt="plano de piso" src="./assets/plan1.jpg">
+                  <img
+                    class="img-fluid card-img-bottom"
+                    alt="plano de piso"
+                    src="./assets/plan1.jpg"
+                  />
                 </div>
-                <div class="card">
-
-                </div>    
+                <div class="card"></div>
               </div>
             </div>
           </div>
@@ -215,7 +244,28 @@
       </section>
     </main>
 
-    <footer class="mb-0 mt-5"></footer>
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 text-center p-3">
+            <h4></h4>
+
+            <p>
+              Las ilustraciones son interpretación del artista. Todas las
+              dimensiones son preliminares y aproximadas y están sujetas a
+              cambios. El desarrollador se reserva el derecho de sustituir
+              materiales por otros similares en calidad, de no estar éstos
+              disponibles cuando se requieran por la construcción. AVISO DE
+              DACO: La radicación de este documento de oferta de venta en el
+              Departamento de Asuntos del Consumidor no constituye
+              necesariamente una aprobación de la venta ni de los términos de
+              ésta, ni una garantía de que la información allí contenida es
+              cierta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
