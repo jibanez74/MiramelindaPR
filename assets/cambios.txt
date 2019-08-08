@@ -1,0 +1,13 @@
+Tu hogar ideal en una comunidad familiar 
+
+logo y navbar font mas grande
+
+cambiar color de font en navbar
+
+quitar fonts de welcome y añadir logo arriba de welcome
+
+Precios comienzan en 197,900
+
+Ventas por Eneida Romany #7206
+
+arreglar cards 

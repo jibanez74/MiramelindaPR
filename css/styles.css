@@ -9,40 +9,18 @@ body {
 }
 
 .btn-warning,
+.btn-warning:hover,
+.btn-warning:active .btn-warning:focus,
 .bg-warning {
   background-color: #fd7e14 !important;
 }
 
-#brand {
-  height: 3rem;
+#welcome #logo {
+  height: 9rem;
 }
 
-#welcome {
-  height: 650px;
-  width: 100%;
-  background-image: url('../assets//welcome.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-#welcome .dark-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-#welcome .dark-overlay h1 {
-  font-size: 6rem;
-  font-weight: 600;
-  margin-top: 9rem;
-}
-
-#welcome .dark-overlay p {
-  font-size: 2rem;
-  font-weight: 600;
+#welcome #title {
+  font-size: 3rem;
 }
 
 footer {
@@ -50,9 +28,6 @@ footer {
   background-color: darkgreen;
 }
 
-@media (max-width: 40rem) {
-  #welcome .dark-overlay p {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
+footer p {
+  font-size: 11px;
 }
