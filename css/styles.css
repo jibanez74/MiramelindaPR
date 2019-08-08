@@ -31,7 +31,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #welcome .dark-overlay h1 {
@@ -40,7 +40,19 @@ body {
   margin-top: 9rem;
 }
 
+#welcome .dark-overlay p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 footer {
   margin-top: 2.1rem;
   background-color: darkgreen;
+}
+
+@media (max-width: 40rem) {
+  #welcome .dark-overlay p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
 }
