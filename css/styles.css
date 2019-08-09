@@ -15,12 +15,12 @@ body {
   background-color: #fd7e14 !important;
 }
 
-#welcome #logo {
+#welcome img {
   height: 9rem;
 }
 
-#welcome #title {
-  font-size: 3rem;
+.carousel .carousel-item {
+  height: 650px;
 }
 
 footer {
@@ -29,5 +29,5 @@ footer {
 }
 
 footer p {
-  font-size: 11px;
+  font-size: 12px;
 }
