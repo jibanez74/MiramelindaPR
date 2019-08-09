@@ -16,7 +16,10 @@ body {
 }
 
 #welcome img {
-  height: 9rem;
+  height: 18.5rem;
+  width: 60rem;
+  margin-bottom: 4rem;
+  margin-top: 9rem;
 }
 
 .carousel .carousel-item {
