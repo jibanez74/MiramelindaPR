@@ -22,8 +22,14 @@ body {
   margin-top: 9rem;
 }
 
-.carousel .carousel-item {
-  height: 650px;
+#description-list {
+  font-size: 1.4rem;
+  font-weight: 500;
+  list-style: square;
+}
+
+#bot-field {
+  display: none;
 }
 
 footer {
@@ -40,5 +46,10 @@ footer p {
     width: 30rem;
     height: 11rem;
     margin: 8rem 1rem 4rem;
+  }
+
+  #description-list {
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 }
