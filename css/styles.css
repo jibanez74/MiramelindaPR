@@ -15,14 +15,32 @@ body {
   background-color: #fd7e14 !important;
 }
 
+.navbar {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
 #welcome img {
   margin-top: 5.4rem;
+}
+
+#about {
+  margin-bottom: 2.3rem;
 }
 
 #description-list {
   font-size: 1.4rem;
   font-weight: 500;
   list-style: square;
+}
+
+#price {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#info {
+  margin-top: 2.5rem;
 }
 
 #bot-field {
