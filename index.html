@@ -20,6 +20,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css"
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -135,11 +139,18 @@
         <div class="container-fluid">
           <div class="row justify-content-center px-md-4">
             <div class="col-md-5 text-center">
-              <img
-                src="./assets/plan1.jpg"
-                alt="plano de casa"
-                class="img-fluid img-thumbnail rounded"
-              />
+              <a
+                href="./assets/plan1.jpg"
+                data-lightbox="Plano de Case"
+                data-title="plano"
+                class="no-style"
+              >
+                <img
+                  src="./assets/plan1.jpg"
+                  alt="plano de casa"
+                  class="img-fluid img-thumbnail rounded"
+                />
+              </a>
             </div>
 
             <div class="col-md-6">
@@ -366,6 +377,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script>
       $(document).ready(function() {
         // Add smooth scrolling

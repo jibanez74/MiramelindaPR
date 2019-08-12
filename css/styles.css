@@ -56,6 +56,10 @@ body {
   display: none;
 }
 
+.no-style {
+  text-decoration: none;
+}
+
 footer {
   margin-top: 2.1rem;
   background-color: darkgreen;
