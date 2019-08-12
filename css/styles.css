@@ -15,7 +15,7 @@ body {
   background-color: #fd7e14 !important;
 }
 
-.navbar {
+#main-nav {
   font-size: 18px;
   letter-spacing: 2px;
 }

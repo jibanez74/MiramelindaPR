@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="" />
     <meta name="author" content="J.R Ibanez Romany" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <title>
-      Miramelinda Estates - Puerto Rico
+      Miramelinda - Tu hogar ideal en una comunidad familiar
     </title>
     <link
       rel="stylesheet"
@@ -24,10 +23,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css"
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="fixed-top navbar navbar-expand-sm navbar-dark bg-success p-3">
+    <nav
+      id="main-nav"
+      class="fixed-top navbar navbar-expand-sm navbar-dark bg-success p-3"
+    >
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -141,16 +143,15 @@
             <div class="col-md-5 text-center">
               <a
                 href="./assets/plan1.jpg"
-                data-lightbox="Plano de Case"
-                data-title="plano"
+                data-lightbox="plano"
+                data-title="Plano de Casa"
                 class="no-style"
               >
                 <img
                   src="./assets/plan1.jpg"
-                  alt="plano de casa"
                   class="img-fluid img-thumbnail rounded"
-                />
-              </a>
+                  alt="Plano de casa"
+              /></a>
             </div>
 
             <div class="col-md-6">
@@ -220,11 +221,17 @@
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-md-12 text-center p-md-4">
-              <img
-                src="./assets/master-sm.jpg"
-                class="img-fluid img-thumbnail rounded"
-                alt="plano master"
-              />
+              <a
+                href="./assets/master-lg.jpg"
+                class="no-style"
+                data-lightbox="master-plan"
+                data-title="Plano de Fachada"
+              >
+                <img
+                  src="./assets/master-sm.jpg"
+                  class="img-fluid img-thumbnail rounded"
+                  alt="plano master"
+              /></a>
             </div>
           </div>
         </div>
@@ -362,11 +369,7 @@
       </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -377,38 +380,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Add smooth scrolling
-        $('#main-nav a').on('click', function(e) {
-          // Check for a hash value
-          if (this.hash !== '') {
-            // Prevent default behavior
-            e.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // add scroll spy
-            $('body').scrollspy({ target: '#main-nav' });
-
-            // Animate smooth scroll
-            $('html, body').animate(
-              {
-                scrollTop: $(hash).offset().top
-              },
-              900,
-              function() {
-                // Add hash to URL after scroll
-                window.location.hash = hash;
-              }
-            );
-          }
-        });
-      });
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
-
-<!--email = ventasmiramelinda@gmail.com-->
