@@ -24,6 +24,11 @@ body {
   margin-top: 5.4rem;
 }
 
+.carousel-item {
+  min-height: 480px;
+  max-height: 720px;
+}
+
 #about {
   margin-bottom: 2.3rem;
 }
