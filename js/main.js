@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Add smooth scrolling
-  $('#main-nav a').on('click', function(e) {
+  $('#main-nav a').on('click', function (e) {
     // Check for a hash value
     if (this.hash !== '') {
       // Prevent default behavior
@@ -15,10 +15,10 @@ $(document).ready(function() {
       // Animate smooth scroll
       $('html, body').animate(
         {
-          scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top,
         },
         900,
-        function() {
+        function () {
           // Add hash to URL after scroll
           window.location.hash = hash;
         }

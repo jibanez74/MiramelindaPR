@@ -55,6 +55,14 @@
               <a href="#about" class="nav-link">Comunidad</a>
             </li>
             <li class="nav-item">
+              <a
+                target="_blank"
+                href="https://kuula.co/share/7X0TF"
+                class="nav-link"
+                >Tour Virtual</a
+              >
+            </li>
+            <li class="nav-item">
               <a href="#info" class="nav-link">Residencias</a>
             </li>
             <li class="nav-item">
@@ -86,14 +94,6 @@
     </header>
 
     <main>
-      <!-- <div id="banner" class="w-100">
-        <img
-          class="d-block w-100"
-          src="/assets/welcome.png"
-          alt="imagen de fachada"
-        />
-      </div> -->
-
       <section id="myCarousel" class="container-fluid">
         <div id="gallery" data-ride="carousel" class="carousel slide">
           <ol class="carousel-indicators">
@@ -183,9 +183,10 @@
                   <a
                     role="button"
                     class="btn btn-lg btn-warning my-md-4 my-3"
-                    href="#info"
+                    data-toggle="modal"
+                    href="#modal-tour"
                   >
-                    Más Información
+                    Ir a Tour Virtual
                   </a>
                 </div>
               </div>
@@ -395,7 +396,7 @@
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.590796447034!2d-65.83897708493937!3d18.365943687499204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c049fcb6cd09e8f%3A0xbfdd4385517ee93e!2sMiramelinda+Estates!5e0!3m2!1sen!2spr!4v1564349281363!5m2!1sen!2spr"
                       class="embed-responsive-item"
                       frameborder="0"
-                      style="border:0"
+                      style="border: 0;"
                       allowfullscreen
                     ></iframe>
                   </div>
@@ -445,7 +446,7 @@
     </footer>
 
     <div class="modal fade" id="ventas">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-3">
           <div class="modal-header text-center">
             <h3 class="modal-title text-dark">
@@ -466,8 +467,42 @@
           </div>
           <div class="modal-footer text-center p-3">
             <button type="button" class="btn btn-success" data-dismiss="modal">
-              Cerrar
+              Cerrar Ventana
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-tour">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2>Virtual Tour</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      src="https://kuula.co/share/7X0TF"
+                      class="embed-responsive-item"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-group mt-3">
+              <a href="" target="_blank" class="btn btn-success">
+                Ir a Tour
+              </a>
+              <button data-dismiss="modal" type="button" class="btn btn-light">
+                Cerrar Ventana
+              </button>
+            </div>
           </div>
         </div>
       </div>
