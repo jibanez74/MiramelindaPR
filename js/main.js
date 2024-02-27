@@ -66,7 +66,7 @@ $(document).ready(function () {
       case "domingo":
         $("#timeSelect").append(generateTimeOptions("11:00", "16:00"));
         break;
-      case "martes":
+      case "miercoles":
         $("#timeSelect").append(generateTimeOptions("10:30", "15:30"));
         break;
       case "viernes":
